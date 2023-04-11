@@ -1,0 +1,65 @@
+.container{
+    margin: 0 auto;
+    width: 500px;
+}
+
+.word{
+    height: 200px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 36px;
+    text-align: center;
+
+}
+
+.letter{
+    border: 1px solid #ccc;
+    border-radius: 6px;;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    float: left;
+    margin:2px;
+}
+
+.theWord{
+    border: 1px solid #ccc;
+    border-radius: 6px;;
+    height: 50px;
+    width: 50px;
+    float: left;
+    text-align: center;
+    font-size: 40px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.keyboard{
+    width: 460px;
+    height: 400px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.halfLetter{
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    width: 20px;
+    text-align: center;
+    font-size: 30px;
+    float: left;
+    margin:2px;
+}
+
+.oneHalfLetter{
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    font-size: 30px;
+    float: left;
+    margin:2px;
+}
