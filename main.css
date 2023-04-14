@@ -1,15 +1,20 @@
 .container{
     margin: 0 auto;
-    width: 500px;
+    width: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.word{
+.wordField{
     height: 200px;
-    width: 100%;
+    width: 960px;
     margin: 0 auto;
     font-size: 36px;
     text-align: center;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .letter{
@@ -26,11 +31,11 @@
 .theWord{
     border: 1px solid #ccc;
     border-radius: 6px;;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     float: left;
     text-align: center;
-    font-size: 40px;
+    font-size: 46px;
     margin:0 auto;
     text-align: center;
 }
@@ -39,14 +44,13 @@
     visibility: hidden;
 }
 
-
-
 .keyboard{
     width: 460px;
-    height: 400px;
+    height: 200px;
     text-align: center;
     font-size: 30px;
 }
+
 
 .halfLetter{
     border: none;

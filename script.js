@@ -40,24 +40,26 @@ addEventListener("click", function(e){
     const keyLetter = e.target;
     console.log(keyLetter.textContent);
     console.log(currentWord);
+    let uncoverLetter = document.getElementsByClassName("key_"+keyLetter.textContent);
+    let winCheck = document.getElementsByClassName("theKey");
+    let chancesFails = document.querySelector(".chances");
     
     //uncover selected letters
     currentWord.forEach(function(clickedletter){
         if(clickedletter==keyLetter.textContent){
-        let uncoverLetter = document.getElementsByClassName("key_"+keyLetter.textContent);
-        let winCheck = document.getElementsByClassName("theKey");
-        
-        if(winCheck.length >= 1){
+        if(winCheck.length > 0){
             for(let i =0; i<uncoverLetter.length; i++){
                 uncoverLetter[i].classList.remove("theKey");
                 console.log(winCheck.length);
             }
-            }
-            else{
-                console.log("Wygrałeś");
-            }
         };
+    }
+    });
 
 
-        });
-    })
+    if(winCheck.length==0){
+        chancesFails.innerHTML=`<h1>WYGRAŁEŚ</h1>`
+    }
+})
+
+
