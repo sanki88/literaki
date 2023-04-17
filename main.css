@@ -73,3 +73,7 @@
     float: left;
     margin:2px;
 }
+
+.theKeyClicked{
+    opacity: 0.5;
+}

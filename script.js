@@ -6,13 +6,14 @@ const keyboardCharacters = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a
 //getting divs
 const word = document.querySelector(".word");
 const keyboard = document.querySelector(".keyboard");
+
 //random number od key in array
 let wordsMaxNumber = Math.floor(Math.random()*words.length);
 //split the word
 let currentWord = words[wordsMaxNumber].split("");
 //console.log(currentWord);
 
-    
+const newGameButt = document.querySelector(".newGame");
 //shuffle word and display
 for(let i=0; i<currentWord.length; i++){
     console.log(currentWord.length);
@@ -44,22 +45,34 @@ addEventListener("click", function(e){
     let winCheck = document.getElementsByClassName("theKey");
     let chancesFails = document.querySelector(".chances");
     
+    
     //uncover selected letters
     currentWord.forEach(function(clickedletter){
         if(clickedletter==keyLetter.textContent){
+
         if(winCheck.length > 0){
             for(let i =0; i<uncoverLetter.length; i++){
                 uncoverLetter[i].classList.remove("theKey");
                 console.log(winCheck.length);
             }
         };
-    }
+
+        }
+        else{
+            keyLetter.classList.add("theKeyClicked");
+            
+      
+        }
     });
 
 
+
     if(winCheck.length==0){
-        chancesFails.innerHTML=`<h1>WYGRAŁEŚ</h1>`
+        chancesFails.innerHTML=`<h1>WYGRAŁEŚ</h1>`;
+        
     }
 })
+
+
 
 
